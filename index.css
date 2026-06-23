@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background: linear-gradient(90deg, #bfbae6, #766bcc);
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 380px;
+  height: 550px;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 0 20px #161616;
+  background: linear-gradient(90deg, #5e55a4, #7975b6);
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.card-content {
+  border-radius: 2px;
+  box-shadow: 0 0 30px #00000a00;
+  padding: 40px 30px;
+  max-width: 400px;
+  height: 500px;
+  width: 350px;
+  position: relative;
+  z-index: 10;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+
+
+.icon {
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  display: inline-block;
+  position: absolute;
+}
+
+.field-area {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  gap: 5px;
+  margin-bottom: 70px;
+  margin-left: -50px;
+  z-index: 5;
+}
+
+.field-area input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding-left: 25px;
+  background: transparent;
+  outline: none;
+  padding-bottom: 10px;
+}
+
+input:focus {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 5px;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px #766bcc;
+  border: 1px solid #c9c3f0;
+  background: #fff;
+  color: purple;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+  z-index: 5;
+}
+
+.btn-text {
+  color: #6c64ac;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  z-index: 5;
+}
+
+.remember-me input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.remember-me label {
+  font-size: 0.85rem;
+  color: #4e449e;
+  cursor: pointer;
+}
+
+.social-login {
+  text-align: center;
+  z-index: 5;
+  position: absolute;
+  top: 450px;
+  right: -25px;
+}
+
+.social-login h4 {
+  color: #4e449e;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #fff;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 250px;
+  position: relative;
+}
+
+.social-icons a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.card-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card-background-1 {
+  background: #fff;
+  width: 420px;
+  height: 550px;
+  rotate: calc(45deg);
+  border-radius: 40px;
+  top: 10px;
+  left: -220px;
+  bottom: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.card-background-2 {
+  position: absolute;
+  top: -140px;
+  right: 10px;
+  height: 200px;
+  width: 200px;
+  background: #6c64ac;
+  border-radius: 0 20px 20px 0;
+  rotate: calc(45deg);
+}
+
+.card-background-3 {
+  position: absolute;
+  top: 120px;
+  right: -1000px;
+  left: 20px;
+  bottom: 0;
+  height: 190px;
+  width: 680px;
+  display: flex;
+  margin-top: -55px;
+  background: linear-gradient(90deg, #69669e, #5d54a4);
+  border-radius: 0 20px 20px 0;
+  rotate: calc(135deg);
+}
+
+.card-background-4 {
+  position: absolute;
+  bottom: -360px;
+  right: 350px;
+  height: 350px;
+  width: 450px;
+  left: 120px;
+  background: #7f7bb9;
+  border-radius: 40px;
+  rotate: calc(45deg);
+}
+
+
+
+@media (max-width: 480px) {
+  .card {
+    min-height: auto;
+  }
+
+  .card-content {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .input {
+    margin-bottom: 15px;
+  }
+
+  .card-background-1,
+  .card-background-2,
+  .card-background-3,
+  .card-background-4 {
+    display: none;
+  }
+}

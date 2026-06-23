@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+
+            <form action="" method="post">
+              <div class="field-area">
+                  <img
+                    src="images/user-svgrepo-com.svg"
+                    alt="user icon"
+                    height="20"
+                    width="20"
+                    class="icon"
+                />
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="User name/Email"
+                  required
+                />
+              </div>
+
+              <div class="field-area">
+                  <img
+                    src="images/padlock-lock-svgrepo-com.svg"
+                    alt="lock icon"
+                    height="20"
+                    width="20"
+                    class="icon"
+                />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <!--login button-->
+              <div class="remember-me">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember me</label>
+              </div>
+              <button type="submit" class="btn">
+                <span class="btn-text">LOGIN NOW</span
+                ><span class="arrow">></span>
+              </button>
+            </form>
+
+            <!-- Socials Section -->
+            <div class="social-login">
+              <h4>login via</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="card-background">
+              <span class="card-background-1"></span>
+              <span class="card-background-2"></span>
+              <span class="card-background-3"></span>
+              <span class="card-background-4"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
